@@ -10,7 +10,7 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: http
       protocol: TCP
-      nodePort: 30888
+      nodePort: 30880
       name: http
   selector:
     {{- include "drone.selectorLabels" . | nindent 4 }}
