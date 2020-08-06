@@ -201,8 +201,8 @@ env:
   ## GitHub-specific variables. See the provider docs here:
   ## Ref: https://docs.drone.io/installation/providers/github/
   ##
-  # DRONE_GITHUB_CLIENT_ID:
-  # DRONE_GITHUB_CLIENT_SECRET:
+  DRONE_GITHUB_CLIENT_ID: '${secrets.getValue("bc-git-drone-id")}'
+  DRONE_GITHUB_CLIENT_SECRET: '${secrets.getValue("bc-git-drone-secret")}'
 
   ## GitLab-specific variables. See the provider docs here:
   ## Ref: https://docs.drone.io/installation/providers/gitlab/
