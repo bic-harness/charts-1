@@ -38,7 +38,7 @@ updateStrategy: {}
 
 service:
   type: NodePort
-  port: 80
+  port: 30880
 
 ingress:
   enabled: false
